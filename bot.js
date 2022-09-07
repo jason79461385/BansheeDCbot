@@ -7,17 +7,18 @@ const DirtyW_Reply = [
     "罵誰呢<:omg:1002735991834021890>"
 ] //ok
 
-const RRRR = ["RRR","啊啊啊","rrr","!山羌","！山羌","!當","!三槍"] 
+const RRRR = ["RRRR","啊啊啊啊","rrrr","!山羌","！山羌","!當","!三槍"] 
 const R_Reply = [
     "啊啊啊啊...啊啊啊..啊...",
     "我中了兩槍，如果我這次不幸死的話..."
 ] //ok
 
-const Meow = ["喵喵"] 
+const Meow = ["喵喵喵喵"] 
 const Meow_Reply = [
     "喵啥虫啦!!!<:CCFQ:1004511375906840668>",
     "AWEI_2",
-    "AWEI_1"
+    "AWEI_1",
+    "BansheeMeow"
 ] //ok
 
 const Notgay = ["不是男同","不是甲","不是gay"] 
@@ -28,7 +29,8 @@ const Notgay_Reply = [
 
 const GN=["!晚安晚安","！晚安晚安"]
 const GN_Reply=[
-    "晚安喵喵",
+    "./Meow.mp3",
+    "./banshee_5ma.mp3",
     "晚安晚安",
     "歐茲嘎哩... 痾痾痾頭好痛"
 ] //ok
@@ -60,7 +62,13 @@ const GirlD_Reply = [
     "女裝大佬 -->押他庫"
 ] //ok
 
-const O1O1 =  ["喔咿喔咿","喔咿喔一","!李維哲","!維哲","喔一喔一"]//ok
+const O1O1 =  ["!喔咿喔咿","!喔咿喔一","!喔一喔一"]//ok
+
+const WEIWEI = ["!李維哲","!維哲"]
+const WEIWEI_Reply = ["烈火雄心",
+    "https://cdn.discordapp.com/attachments/1008337030339624981/1015932281921228830/unknown.png",
+    "https://cdn.discordapp.com/attachments/1008337030339624981/1015932399101681704/unknown.png"
+]
 
 const drawlots = ["!抽獎","!無糖綠茶","!綠茶","!水水"] //ok
 const drawlots_Reply =["恭喜獲得特別獎：水水一份","恭喜獲得普通獎：自製無糖綠茶一瓶","沒有抽獎啦:rage:","沒有抽獎啦:rage:","沒有抽獎啦:rage:","沒有抽獎啦:rage:","沒有抽獎啦:rage:","沒有抽獎啦:rage:","沒有抽獎啦:rage:","沒有抽獎啦:rage:"]
@@ -79,7 +87,7 @@ const Gay = ["!男同"] //ok
 
 const RSHO = ["!阿修","!夕燒","!一生摯愛","!阿燒"] //ok
 
-const HAKU=["!HAKU","!哈酷"] //ok
+const HAKU=["!HAKU","!哈酷","!哈苦"] //ok
 
 const SHALALA =["!蝦哥","!蝦拉拉"] //ok
 
@@ -114,7 +122,8 @@ const AQUA_Reply = [
     "https://cdn.discordapp.com/attachments/1013744117890699296/1014774412161064991/IMG_0035.gif",
     "https://tenor.com/view/minato-aqua-caps-cap-hoodie-inkyap-gif-23987910",
     "https://cdn.discordapp.com/attachments/1013744117890699296/1014777290028232825/My_project-1_2.png",
-    "https://tenor.com/view/hologra-hololive-anime-minato-aqua-leak-gif-22462767"
+    "https://tenor.com/view/hologra-hololive-anime-minato-aqua-leak-gif-22462767",
+    "./aqua-power.mp3"
 ]//ok
 
 const Smoke = ["!抽菸"]
@@ -160,13 +169,49 @@ const JKBRY = ["!JKBRY"]
 const JKBRY_Reply = ["一個被學妹甩的咖<:emoji_20:1001492654854520932>"]
 
 const G7788 = ["!7788"]
-const G7788_Reply = ["https://cdn.discordapp.com/attachments/1014807707330547773/1014807880823742565/f4a725ef.jpg"]
+const G7788_Reply = [
+    "https://tenor.com/view/danny-lee-super-kazuya-kazuya-gachimuchi-gachi-gif-22029354",
+    "https://media.discordapp.net/attachments/999992199309692978/1006227130557939902/gin__sym__-938606075_AdobeExpress.gif"
+]
 
 const Pumpkin = ["!南瓜"]
 const Pumpkin_Reply = [
     "https://tenor.com/view/pumpkin-smash-destroy-crush-mallet-gif-23485408",
     "https://tenor.com/view/pumpkins-pumpkin-pumpkinhead-rrrpumpkinhead-gif-18896751"
 ]
+
+const TH = ["!拓海"]
+const TH_Reply = [
+    "聲稱自己被詐騙的八卦區棒棒糖(副人格說自己主人格在裝可憐)\n還曾經在主播台上畫性器官，記得要先去倒讚再高歌離席:thumbdown:"
+]
+
+const HARU = ["!HARU","!haru","!哈魯"]
+const HARU_Reply =[
+    "最可愛的馬麻，HAKU的寶貝!!!<:2_:1004514328361324626>"
+]
+const AJ = ["!阿介"]
+const AJ_Reply = ["https://cdn.discordapp.com/attachments/1013744117890699296/1015551000150544454/unknown.png"]
+
+const ARAM = ["有AR幫嗎"]
+const LCC = ["愛西西"]
+const HCC = ["恨西西"]
+const AH_React = ["屁眼"]
+const RICHMAN = ["社頂"]
+
+const Insurance = ["!保險丸子","!保保丸"]
+const Insurance_Reply = ["https://cdn.discordapp.com/attachments/1008337030339624981/1017059146765438996/unknown-01-01.jpg"]
+
+const Lebron = ["!死人","!LBJ","!lbj"]
+const Lebron_Reply = ["LBJ他就社頂一個，還假裝自己是社底"] //ok
+
+const Bluefox = ["!藍狐"]
+const Bluefox_Reply = ["唱歌撩妹男 雲科砲王 最近活躍於小祈 庫麻直播 會在庫麻DC駐唱"]
+
+const GHD = ["!綠帽狗"]
+const GHD_Reply = ["考研…再一年…"]
+
+const FF = ["!花花"]
+const FF_Reply = ["學姊殺手","大學現充咖","和ㄩㄣ一起度過一個禁忌的晚上…","掉出來要記得扶好"]
 
 client.login(auth.key);
 
@@ -179,6 +224,52 @@ client.on('message', msg =>{
 
     if(msg.author == client.user) return;
 
+    if (AH_React.some(word => msg.content.includes(word))){
+        msg.react("<:Mmmm:999283674077999174>") ///ok
+    }
+
+    if (Bluefox.some(word => msg.content.includes(word))){
+        msg.reply(Bluefox_Reply) ///ok
+    }
+
+    if (GHD.some(word => msg.content.includes(word))){
+        msg.channel.send(GHD_Reply) ///ok
+    }
+
+    if (FF.some(word => msg.content.includes(word))){
+        const FF_ReplyS = FF_Reply[Math.floor(Math.random()* FF_Reply.length)]
+        msg.reply(FF_ReplyS) ///ok
+    }
+
+    if (Lebron.some(word => msg.content.includes(word))){
+        msg.reply(Lebron_Reply) ///ok
+    }
+
+    if (Insurance.some(word => msg.content.includes(word))){
+        msg.channel.send(Insurance_Reply) ///ok
+    }
+
+    if (RICHMAN.some(word => msg.content.includes(word))){
+        msg.react("<:__:1001430356102221955>") ///ok
+    }
+
+
+    if (ARAM.some(word => msg.content.includes(word))){
+        msg.react("<:__:1001430356102221955>") ///ok
+    }
+
+    if (LCC.some(word => msg.content.includes(word))){
+        msg.react("<:2_:1004514328361324626>") ///ok
+    }
+    
+    if (HCC.some(word => msg.content.includes(word))){
+        msg.react("<:CCFQ:1004511375906840668>") ///ok
+    }
+
+    if (AJ.some(word => msg.content.includes(word))){
+        msg.channel.send(AJ_Reply) ///ok
+    }
+
     if (Spider.some(word => msg.content.includes(word))){
         const Spider_ReplyS = Spider_Reply[Math.floor(Math.random()* Spider_Reply.length)]
         msg.channel.send(Spider_ReplyS) ///ok
@@ -190,12 +281,20 @@ client.on('message', msg =>{
     } //ok
 
     if (G7788.some(word => msg.content.includes(word))){
-        msg.channel.send("不是我的主意，7788不要剛我")
-        msg.channel.send(G7788_Reply) 
+        const G7788_Replys = G7788_Reply[Math.floor(Math.random()* G7788_Reply.length)]
+        msg.channel.send(G7788_Replys) 
     } //ok
 
     if (WhokillBC.some(word => msg.content.includes(word))){
         msg.reply(WhokillBC_Reply) 
+    } //ok
+
+    if (TH.some(word => msg.content.includes(word))){
+        msg.reply(TH_Reply) 
+    } //ok
+
+    if (HARU.some(word => msg.content.includes(word))){
+        msg.reply(HARU_Reply) 
     } //ok
 
     if (JKBRY.some(word => msg.content.includes(word))){
@@ -212,7 +311,14 @@ client.on('message', msg =>{
 
     if (AQUA.some(word => msg.content.includes(word))){
         const AQUA_ReplyS = AQUA_Reply[Math.floor(Math.random()* AQUA_Reply.length)]
-        msg.channel.send(AQUA_ReplyS) ///ok
+        if (AQUA_ReplyS==AQUA_Reply[5])
+        {
+            msg.channel.send({files:[AQUA_ReplyS]});
+        }
+        else
+        {
+            msg.channel.send(AQUA_ReplyS) ///ok
+        }
     }
 
     if (Smoke.some(word => msg.content.includes(word))){
@@ -289,7 +395,7 @@ client.on('message', msg =>{
         msg.reply(WaterMelon_ReplyS) ///ok
     }
 
-    if (Meow.some(word => msg.content.includes(word))){
+    if (Meow.some(word => msg.content.includes(word))||msg.content===("!喵喵")){
         const Meow_ReplyS = Meow_Reply[Math.floor(Math.random()* Meow_Reply.length)]
         if (Meow_ReplyS == Meow_Reply[0])
         {
@@ -302,6 +408,10 @@ client.on('message', msg =>{
         if (Meow_ReplyS == Meow_Reply[2])
         {
             msg.channel.send({files:['./AWEIWEI_2.mp3']})
+        }
+        if (Meow_ReplyS == Meow_Reply[3])
+        {
+            msg.channel.send({files:['./Meow.mp3']})
         }
     }
     if (Notgay.some(word => msg.content.includes(word))){
@@ -324,7 +434,15 @@ client.on('message', msg =>{
     } //ok
     if (GN.some(word => msg.content.includes(word))){
         const GN_Replys = GN_Reply[Math.floor(Math.random()* GN_Reply.length)]
-        msg.channel.send(GN_Replys) //ok
+        if (GN_Replys==GN_Reply[2]|| GN_Replys==GN_Reply[3])
+        {
+            msg.reply(GN_Replys)
+        }
+        else
+        {
+            msg.channel.send({files:[GN_Replys]})
+        }
+         //ok
     }
     if (GN99.some(word => msg.content.includes(word))){
         const GN99_Replys = GN99_Reply[Math.floor(Math.random()* GN99_Reply.length)]
@@ -338,6 +456,20 @@ client.on('message', msg =>{
         //msg.channel.send("https://imgur.com/a/uVTEjiV.jpg")
         msg.channel.send({files:['./O1O1.jpg']});
     } //ok
+
+    if (WEIWEI.some(word => msg.content.includes(word))){
+        const WEIWEI_Replys = WEIWEI_Reply[Math.floor(Math.random()* WEIWEI_Reply.length)]
+        if (WEIWEI_Replys == WEIWEI_Reply[0])
+        {
+            msg.channel.send({files:['./O1O1.jpg']});
+        }
+        else
+        {   
+            msg.reply("猛男清大便")
+            msg.channel.send(WEIWEI_Replys)
+        }
+    }
+
     if (Gay.some(word => msg.content.includes(word))){
         //msg.channel.send("https://imgur.com/a/uVTEjiV.jpg")
         msg.channel.send({files:['./ewwww.png']});
