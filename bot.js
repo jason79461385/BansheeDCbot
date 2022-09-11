@@ -43,9 +43,10 @@ const GN99_Reply = [
     "https://cdn.discordapp.com/emojis/895882525967257632.gif?size=4096&quality=lossless"
 ] //ok
 
-const Late = ["!遲到","！遲到"]
+const Late = ["!遲到","！遲到","!大遲到"]
 const Late_Reply = [
-    "才沒有遲到! 賣岔啦!<:__:1000311544791449760>"
+    "才沒有遲到! 賣岔啦!<:__:1000311544791449760>",
+    "cryoh"
 ] //ok
 
 const JJ = ["!林俊傑","！林俊傑"]
@@ -136,7 +137,8 @@ const Smoke_Reply = [
 
 const Bansheee = ["!阿西","!班西","!哭哭班西"]
 const Bansheee_Reply = [
-    "失去了記憶、找尋自己到底是被誰殺掉而跑來人類世界的愛哭鬼報喪女妖－－班西<:__:1001414045603209286>"
+    "失去了記憶、找尋自己到底是被誰殺掉而跑來人類世界的愛哭鬼報喪女妖－－班西<:__:1001414045603209286>",
+    "licklick.mp3"
 ]//ok
 
 const Mfmf = ["!mfmf"] //ok
@@ -147,7 +149,8 @@ const Rage_Reply = [
     "<:__:1000308771446337546><:__:1000308771446337546><:__:1000308771446337546>",
     "https://memeprod.ap-south-1.linodeobjects.com/user-maker-thumbnail/1c3de237b838c6ca4cb1d612f0992977.gif",
     "https://cdn.discordapp.com/attachments/1013744117890699296/1014782756431089684/810437918384455711.gif",
-    "AWEIsound"
+    "AWEIsound.mp3",
+    "cryoh.mp3"
 ]//ok
 
 const Rightnow = ["!就是現在"] 
@@ -182,7 +185,7 @@ const Pumpkin_Reply = [
 
 const TH = ["!拓海"]
 const TH_Reply = [
-    "聲稱自己被詐騙的八卦區棒棒糖(副人格說自己主人格在裝可憐)\n還曾經在主播台上畫性器官，記得要先去倒讚再高歌離席:thumbdown:"
+    "垃圾謎語人被國中生封鎖(已解封)，聲稱自己被詐騙的八卦區棒棒糖(副人格說自己主人格在裝可憐)\n還曾經在主播台上畫性器官，記得要先去倒讚再高歌離席:thumbdown:"
 ]
 
 const HARU = ["!HARU","!haru","!哈魯"]
@@ -208,10 +211,25 @@ const Bluefox = ["!藍狐"]
 const Bluefox_Reply = ["唱歌撩妹男 雲科砲王 最近活躍於小祈 庫麻直播 會在庫麻DC駐唱"]
 
 const GHD = ["!綠帽狗"]
-const GHD_Reply = ["考研…再一年…"]
+const GHD_Reply = ["老處男~~考研…再一年…~~"]
 
 const FF = ["!花花"]
 const FF_Reply = ["學姊殺手","大學現充咖","和ㄩㄣ一起度過一個禁忌的晚上…","掉出來要記得扶好"]
+
+const Eldon = ["!艾爾登","!ELDON","!Eldon","!eldon"]
+const Eldon_Reply = ["https://tenor.com/view/zherka-jonzherka-gif-20420495"]
+
+const FS = ["!費雪"]
+const FS_Reply = ["八卦區首席咒術師 ~~高配文華拓海~~"]
+
+const BlackF = ["!黑狐"]
+const BlackF_Reply = ["夢到被偽娘跟EJ追著跑的小大一，整天看本子還被抓包"]
+
+const COKY = ["!COKY"]
+const COKY_Reply = [
+    "整天貼阿西給他的啾啾影片的噁男",
+    "gif機器人"
+]
 
 client.login(auth.key);
 
@@ -228,12 +246,29 @@ client.on('message', msg =>{
         msg.react("<:Mmmm:999283674077999174>") ///ok
     }
 
+    if (COKY.some(word => msg.content.includes(word))){
+        const COKY_ReplyS = COKY_Reply[Math.floor(Math.random()* COKY_Reply.length)]
+        msg.reply(COKY_ReplyS) ///ok
+    }
+
     if (Bluefox.some(word => msg.content.includes(word))){
         msg.reply(Bluefox_Reply) ///ok
     }
 
+    if (BlackF.some(word => msg.content.includes(word))){
+        msg.reply(BlackF_Reply) ///ok
+    }
+
+    if (FS.some(word => msg.content.includes(word))){
+        msg.reply(FS_Reply) ///ok
+    }
+
     if (GHD.some(word => msg.content.includes(word))){
         msg.channel.send(GHD_Reply) ///ok
+    }
+
+    if (Eldon.some(word => msg.content.includes(word))){
+        msg.channel.send(Eldon_Reply) ///ok
     }
 
     if (FF.some(word => msg.content.includes(word))){
@@ -250,7 +285,10 @@ client.on('message', msg =>{
     }
 
     if (RICHMAN.some(word => msg.content.includes(word))){
+        const RICHMAN_trigger = Math.floor(Math.random()*10)+1
+        if (RICHMAN_trigger<=4){
         msg.react("<:__:1001430356102221955>") ///ok
+        }
     }
 
 
@@ -340,11 +378,24 @@ client.on('message', msg =>{
         {
             msg.channel.send({files:['./AWEIWEI_3.mp3']});
         }
+        if (Rage_ReplyS == Rage_Reply[4])
+        {
+            msg.channel.send({files:['./cry_oh.mp3']});
+        }
     }
 
     if (Bansheee.some(word => msg.content.includes(word))){
-        msg.channel.send(Bansheee_Reply)
-        msg.channel.send("https://cdn.discordapp.com/attachments/1013744117890699296/1014774503324262400/04746f7d75dd53d8.gif")
+        const Bansheee_Replys = Bansheee_Reply[Math.floor(Math.random()* Bansheee_Reply.length)]
+        if (Bansheee_Replys == Bansheee_Reply[0])
+        {
+            msg.channel.send(Bansheee_Replys)
+            msg.channel.send("https://cdn.discordapp.com/attachments/1013744117890699296/1014774503324262400/04746f7d75dd53d8.gif")
+        }
+        else 
+        {
+            msg.channel.send(Bansheee_Reply[0])
+            msg.channel.send({files:['./licklick.mp3']});
+        }
     } //ok
 
     if (Rightnow.some(word => msg.content.includes(word))){
@@ -450,7 +501,13 @@ client.on('message', msg =>{
     }
     if (Late.some(word => msg.content.includes(word))){
         const Late_Replys = Late_Reply[Math.floor(Math.random()* Late_Reply.length)]
+        if (Late_Replys==Late_Reply[0])
+        {
         msg.reply(Late_Replys) //ok
+        }
+        else{
+            msg.channel.send({files:['./cry_oh.mp3']});
+        }
     }
     if (O1O1.some(word => msg.content.includes(word))){
         //msg.channel.send("https://imgur.com/a/uVTEjiV.jpg")
@@ -504,6 +561,7 @@ client.on('message', msg =>{
     if (Notyourwife.some(word => msg.content.includes(word))){
         const Notyourwife_Replys = Notyourwife_Reply[Math.floor(Math.random()* Notyourwife_Reply.length)]
         msg.reply(Notyourwife_Replys) //ok
+        msg.channel.send({files:['./xinlibiantai.mp3']});
     }
     
 });
