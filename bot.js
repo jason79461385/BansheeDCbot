@@ -169,7 +169,7 @@ const WhokillBC = ["!誰殺班西"]
 const WhokillBC_Reply = ["你啊，還問啊:eyes:"]
 
 const JKBRY = ["!JKBRY"]
-const JKBRY_Reply = ["一個被學妹甩的咖<:emoji_20:1001492654854520932>"]
+const JKBRY_Reply = ["一個被學妹甩 在HAKU DC群被一堆人封鎖的咖<:emoji_20:1001492654854520932>"]
 
 const G7788 = ["!7788"]
 const G7788_Reply = [
@@ -185,7 +185,8 @@ const Pumpkin_Reply = [
 
 const TH = ["!拓海"]
 const TH_Reply = [
-    "垃圾謎語人被國中生封鎖(已解封)，聲稱自己被詐騙的八卦區棒棒糖(副人格說自己主人格在裝可憐)\n還曾經在主播台上畫性器官，記得要先去倒讚再高歌離席:thumbdown:"
+    "<@569134706889850881>垃圾謎語人被國中生封鎖(已解封)，只會叫人冷靜還有貼複製文笑話\n聲稱自己被詐騙的八卦區棒棒糖(副人格說自己主人格在裝可憐)\n還曾經在主播台上畫性器官，記得要先去倒讚再高歌離席:thumbdown:",
+    "垃圾謎語人被國中生封鎖(已解封)，只會叫人冷靜還有貼複製文笑話\n聲稱自己被詐騙的八卦區棒棒糖(副人格說自己主人格在裝可憐)\n還曾經在主播台上畫性器官，記得要先去倒讚再高歌離席:thumbdown:"
 ]
 
 const HARU = ["!HARU","!haru","!哈魯"]
@@ -231,6 +232,19 @@ const COKY_Reply = [
     "gif機器人"
 ]
 
+const Nightmare = ["!宵夜"]
+const Nightmare_Reply = [
+    "https://cdn.discordapp.com/attachments/943440374142214144/1015707777890533386/d9a30e86.gif",
+    "https://cdn.discordapp.com/attachments/908969062447595550/1018904891214790666/0_9.gif",
+    "https://cdn.discordapp.com/attachments/908969062447595550/1018216574001348688/0ac22605.gif",
+    "https://cdn.discordapp.com/attachments/908969062447595550/1018216622130999316/53e0afe0.gif",
+    "https://cdn.discordapp.com/attachments/908969062447595550/1018216643714883665/669427101195042817.gif",
+    "https://tenor.com/view/french-fries-fries-fry-day-national-french-fry-day-gif-19212423",
+    "https://tenor.com/view/mcdonalds-fries-french-fries-mcdonalds-fries-french-fry-day-gif-25198060",
+    "https://cdn.discordapp.com/attachments/1018134503199358997/1019484802656776235/0_3.gif",
+    "https://cdn.discordapp.com/attachments/1018134503199358997/1019485359761006652/noodles-lunch.gif"
+]
+
 client.login(auth.key);
 
 client.on('ready',() =>{
@@ -243,7 +257,11 @@ client.on('message', msg =>{
     if(msg.author == client.user) return;
 
     if (AH_React.some(word => msg.content.includes(word))){
+        const AH_trigger = Math.floor(Math.random()*10)+1
+        if (AH_trigger <=4)
+        {
         msg.react("<:Mmmm:999283674077999174>") ///ok
+        }
     }
 
     if (COKY.some(word => msg.content.includes(word))){
@@ -274,6 +292,11 @@ client.on('message', msg =>{
     if (FF.some(word => msg.content.includes(word))){
         const FF_ReplyS = FF_Reply[Math.floor(Math.random()* FF_Reply.length)]
         msg.reply(FF_ReplyS) ///ok
+    }
+
+    if (Nightmare.some(word => msg.content.includes(word))){
+        const Nightmare_ReplyS = Nightmare_Reply[Math.floor(Math.random()* Nightmare_Reply.length)]
+        msg.channel.send(Nightmare_ReplyS) ///ok
     }
 
     if (Lebron.some(word => msg.content.includes(word))){
@@ -328,7 +351,19 @@ client.on('message', msg =>{
     } //ok
 
     if (TH.some(word => msg.content.includes(word))){
-        msg.reply(TH_Reply) 
+        const TH_trigger = Math.floor(Math.random()*10)+1
+        if ((TH_trigger <= 5 || msg.author == 431092862789222400) && msg.author != 510337447079575563)
+        {
+            msg.channel.send(TH_Reply[0])
+        }
+        else if (TH_trigger > 5 && msg.author != 510337447079575563)
+        {
+            msg.channel.send(TH_Reply[1]) 
+        }
+        else if (msg.author == 510337447079575563)
+        {
+            msg.channel.send("<@569134706889850881><@569134706889850881>垃圾謎語人被國中生封鎖(已解封)，只會叫人冷靜還有貼複製文笑話\n聲稱自己被詐騙的八卦區棒棒糖(副人格說自己主人格在裝可憐)\n還曾經在主播台上畫性器官，記得要先去倒讚再高歌離席:thumbdown:")
+        }
     } //ok
 
     if (HARU.some(word => msg.content.includes(word))){
