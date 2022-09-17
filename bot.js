@@ -185,7 +185,11 @@ const G7788_Reply = [
 const Pumpkin = ["!南瓜"] //ok
 const Pumpkin_Reply = [
     "https://tenor.com/view/pumpkin-smash-destroy-crush-mallet-gif-23485408",
-    "https://tenor.com/view/pumpkins-pumpkin-pumpkinhead-rrrpumpkinhead-gif-18896751"
+    "https://tenor.com/view/pumpkins-pumpkin-pumpkinhead-rrrpumpkinhead-gif-18896751",
+    "./USER1.mp3",
+    "./USER2.mp3",
+    "./USER3.mp3",
+    "./USER4.mp3"
 ]
 
 const TH = ["!拓海"] //ok
@@ -343,7 +347,14 @@ client.on('messageCreate', async msg =>{
 
     if (msg.content.toLowerCase().includes(Pumpkin)){
         const Pumpkin_Replys = Pumpkin_Reply[Math.floor(Math.random()* Pumpkin_Reply.length)]
-        msg.channel.send(Pumpkin_Replys) 
+        if(Pumpkin_Replys==Pumpkin_Reply[0]||Pumpkin_Replys==Pumpkin_Reply[1])
+        {
+            msg.channel.send(Pumpkin_Replys) 
+        }
+        else
+        {
+            msg.channel.send({files:[Pumpkin_Replys]});
+        }
     } //ok
 
     if (msg.content.toLowerCase().includes(G7788)){
