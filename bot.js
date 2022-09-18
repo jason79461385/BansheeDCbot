@@ -24,7 +24,8 @@ const Meow_Reply = [
     "喵啥虫啦!!!<:CCFQ:1004511375906840668>",
     "AWEI_2",
     "AWEI_1",
-    "BansheeMeow"
+    "BansheeMeow",
+    "IN_MEOW"
 ] //ok
 
 const Notgay = ["不是男同","不是甲","不是gay"] //ok
@@ -211,7 +212,11 @@ const AH_React = ["屁眼"] //ok
 const RICHMAN = ["社頂"] //ok
 
 const Insurance = ["!保險丸子","!保保丸"] //ok
-const Insurance_Reply = "https://cdn.discordapp.com/attachments/1008337030339624981/1017059146765438996/unknown-01-01.jpg"
+const Insurance_Reply = [
+"https://cdn.discordapp.com/attachments/1008337030339624981/1017059146765438996/unknown-01-01.jpg",
+"./In_meow.mp3",
+"./badbad.mp3"
+]
 
 const Lebron = ["!死人","!LBJ"] //ok
 const Lebron_Reply = "LBJ他就社頂一個，還假裝自己是社底" //ok
@@ -313,7 +318,15 @@ client.on('messageCreate', async msg =>{
     }
     for (let Insurance_index=0;Insurance_index<=1;Insurance_index++){
     if (msg.content.toLowerCase().includes(Insurance[Insurance_index])){
-        msg.channel.send(Insurance_Reply) ///ok
+        const Insurance_ReplyS = Insurance_Reply[Math.floor(Math.random()* Insurance_Reply.length)]
+        if (Insurance_ReplyS==Insurance_Reply[0])
+        {
+            msg.channel.send(Insurance_ReplyS) 
+        }
+        else
+        {
+            msg.channel.send({files:[Insurance_ReplyS]});
+        } ///ok
     }
     }
     if (msg.content.toLowerCase().includes(RICHMAN)){
@@ -515,6 +528,10 @@ client.on('messageCreate', async msg =>{
         if (Meow_ReplyS == Meow_Reply[3])
         {
             msg.channel.send({files:['./Meow.mp3']})
+        }
+        if (Meow_ReplyS == Meow_Reply[4])
+        {
+            msg.channel.send({files:['./In_meow.mp3']})
         }
     }
     for(let Notgay_index=0 ; Notgay_index<=2 ; Notgay_index++){
